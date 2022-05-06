@@ -1,0 +1,40 @@
+@import "./typography.css";
+
+.fontAirbnbCerealBold {
+  font-family: "AirbnbCerealBold";
+}
+
+.fontAirbnbCerealLight {
+  font-family: "AirbnbCerealLight";
+}
+
+.fontAirbnbCerealMedium {
+  font-family: "AirbnbCerealMedium";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.imgheader {
+  min-height: 25em;
+}
+
+.mainImageDiv {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.box {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "AirbnbCerealBold";
+  src: url("../fonts/AirbnbCerealBold.ttf");
+}
+
+@font-face {
+  font-family: "AirbnbCerealLight";
+  src: url("../fonts/AirbnbCerealLight.ttf");
+}
+
+@font-face {
+  font-family: "AirbnbCerealMedium";
+  src: url("../fonts/AirbnbCerealMedium.ttf");
+}
+
+@font-face {
+  font-family: "AirbnbCerealMedium";
+  src: url("../fonts/AirbnbCerealBook.ttf");
+}
