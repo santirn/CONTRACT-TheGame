@@ -38,3 +38,43 @@ body {
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+.card {
+  border: "1px solid black";
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 30px;
+}
+.cardbg {
+  background-color: white;
+}
+.cardtext {
+  color: #cccacab9;
+}
+.cardbutton {
+  border-radius: 0;
+}
+.email {
+  border: "5px solid black";
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.connectwallet {
+  border: 1px solid white;
+  border-radius: 5px;
+  border-color: #ffc038;
+}
+
+.logo {
+  display: block;
+  height: 6em;
+  position: relative;
+  width: 250px;
+}
+.logoflex {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

@@ -20,37 +20,46 @@ const IndexPage = ({ data }) => {
   }
 
   return(
-    <Layout>
+    <Layout className="fontAirbnbCerealMedium">
       <Seo title="Home" />
-      <div className="position-relative overflow-hidden imgheader"  >
+      {/*<div className="position-relative overflow-hidden imgheader"  >
           <GatsbyImage  image={findImage("1r2.png") } alt="" className="position-absolute top-50 start-50 translate-middle w-100 "/>
-      </div>
-
-
+      </div >*/}
       <Container fluid className="px-0 "> 
+      
+        <Row className="justify-content-center ">
+          <Col xl={12} >
+            <Add img={findImage("Banner.png")}/>
+          </Col>
+        </Row>
+
         {/* Welcome and email notification */ }
-        <Row className="justify-content-center py-4">
-          <Col xs={8} >
-            <Row>
-              <Col xs={12} md={8} className="box">
-                <h2>Welcome to CONTRACT The Game</h2>
-                <p>Enter your email to get notified on new <strong>bundles</strong>.</p>
-                <Form>
-                  <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control type="email" placeholder="Enter email"/>
-                      <Form.Text className="text-muted">
+        <Row className="justify-content-center p-5  ">
+          <Col xs={6} className="card p-4">
+            <Row >
+              <Col    md={8 }sm={12} className="fontAirbnbCerealLight">
+                <h2>WELCOME <span className="px-2 fs-5"> TO </span><span className="fontAirbnbCerealBold">CONTRACT</span></h2>
+                <br/>
+                <p className="fs-4">Enter your email to get notified on new <strong>bundles</strong>.</p>
+                <br/>
+                <Form className="">
+                  <Form.Group className="mb-3" controlId="formBasicEmailm" className="" >
+                    <Form.Control type="email" placeholder="Enter email" className="email mb-2 "/>
+                      <Form.Text className="cardtext">
                         We'll never share your email with anyone else. 
                       </Form.Text>
                   </Form.Group>
-                  <Button variant="secondary" type="submit">
-                    Submit
-                  </Button>
+                  <div className="text-center">
+                    <Button variant="warning" type="submit" className="fontAirbnbCerealBold text-white text-center fs-5 px-4 py-1 mt-1 border-0 cardbutton" >
+                      JOIN
+                    </Button>
+                  </div>
                 </Form>
               </Col>
-              <Col xs={12} md={4} >
-                <div>
+              <Col     sm={12} md={4}>
+                <div className="mx-auto p-3 ">
                 { /* */}
-                <GatsbyImage image={findImage("mosaic.jpg")} alt="" className=""/>
+                <GatsbyImage image={findImage("mosaic.jpg")} alt=""  className="w-100"/>
                 </div>
               </Col>  
             </Row>
@@ -58,7 +67,7 @@ const IndexPage = ({ data }) => {
         </Row>
         
         {/* CONTRACTS EXPO */ }
-        <Row className="justify-content-center mx-auto  py-3 ">
+        <Row className="justify-content-center mx-auto mt-0 pt-0">
           <Col xs={12} md={8}>
             <Row>
                 <h2 className="text-center pt-4 pb-3">Get Your Unique Dream Car NFT</h2>

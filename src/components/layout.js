@@ -20,7 +20,8 @@ const Layout = ({ children }) => {
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title
+          title,
+          logo
         }
       }
     }
@@ -28,7 +29,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header siteTitle={data.site.siteMetadata?.title || `Contract`} logo={data.site.siteMetadata?.logo} />
       
 
       <main>{children}</main>
